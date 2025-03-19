@@ -1,0 +1,15 @@
+# CRON konfigurace pro monitorování využití disku
+# Spouští se každou hodinu v pracovní době a každý den o půlnoci
+# Formát: minute hour day_of_month month day_of_week command
+
+# Spouštění každou hodinu od 8 do 17 v pracovní dny (pondělí až pátek)
+0 8-17 * * 1-5 /usr/local/bin/cron_BOJ0043.bash
+
+# Spouštění každý den o půlnoci
+0 0 * * * /usr/local/bin/cron_BOJ0043.bash
+
+# Spouštění každou neděli ve 23:00 pro vytvoření týdenního souhrnu
+0 23 * * 0 /usr/local/bin/cron_BOJ0043.bash --weekly-summary
+
+# Logování selhání do specifického souboru
+MAILTO="admin@domain.com"

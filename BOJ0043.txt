@@ -1,0 +1,11 @@
+root@debianpc:/home# systemctl status unit_BOJ0043.service
+● unit_BOJ0043.service - BOJ0043 - Přidání informace o startu systému do domovských adresářů
+     Loaded: loaded (/etc/systemd/system/unit_BOJ0043.service; enabled; preset: enabled)
+     Active: active (exited) since Wed 2025-03-19 22:04:01 CET; 10s ago
+    Process: 919 ExecStart=/usr/local/bin/BOJ0043.bash (code=exited, status=0/SUCCESS)
+   Main PID: 919 (code=exited, status=0/SUCCESS)
+        CPU: 20ms
+bře 19 22:04:01 debianpc systemd[1]: Starting unit_BOJ0043.service - BOJ0043 - Přidání informace o startu systému do do>
+bře 19 22:04:01 debianpc BOJ0043.bash[919]: Vytvořen info soubor v adresáři /home/boj0043
+bře 19 22:04:01 debianpc systemd[1]: Finished unit_BOJ0043.service - BOJ0043 - Přidání informace o startu systému do do>
+lines 1-10/10 (END)

@@ -1,0 +1,11 @@
+[Unit]
+Description=BOJ0043 - Přidání informace o startu systému do domovských adresářů
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/BOJ0043.bash
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
